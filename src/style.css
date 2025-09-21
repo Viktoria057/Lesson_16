@@ -1,0 +1,192 @@
+@import 'tailwindcss';
+
+.header {
+  @apply text-white bg-green-900 py-4;
+}
+
+.header--green {
+  @apply bg-green-900 py-4;
+}
+
+.header-container {
+  @apply container mx-auto flex items-center justify-between h-16 px-4;
+}
+
+.header-logo {
+  @apply text-3xl uppercase font-bold;
+}
+
+.header-nav-link {
+  @apply text-lg font-bold text-white px-4 py-2 transition-colors duration-200 hover:text-yellow-500;
+}
+
+/* Hero */
+
+.hero {
+  @apply relative h-[100vh] bg-cover bg-center flex flex-col items-center justify-center text-center text-white pt-16;
+}
+
+.hero--bg {
+  background-image: url('/susi-bludo-v-aziatskom-restorane.jpg');
+}
+
+.hero-content {
+  @apply relative z-10 px-4;
+}
+
+.hero-title {
+  @apply text-4xl md:text-6xl font-bold mb-4;
+}
+
+.hero-subtitle {
+  @apply text-orange-400 text-lg md:text-2xl mb-6;
+}
+
+.hero-btn {
+  @apply bg-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-orange-600 transition;
+}
+
+/* About */
+.about {
+  @apply relative py-20 bg-gray-50;
+}
+
+.about-container {
+  @apply container mx-auto flex flex-col lg:flex-row items-center gap-12 px-6;
+}
+
+.about-text {
+  @apply w-full lg:w-1/2;
+}
+
+.about-title {
+  @apply text-3xl md:text-4xl font-bold mb-6 text-green-900;
+}
+
+.about-paragraph {
+  @apply text-gray-700 mb-4 leading-relaxed;
+}
+
+.about-btn {
+  @apply inline-block bg-orange-500 text-white font-semibold px-6 py-3 rounded-lg transition hover:bg-orange-600;
+}
+
+.about-image {
+  @apply w-full lg:w-1/2;
+}
+
+.about-img {
+  @apply rounded-xl shadow-lg w-full object-cover;
+}
+
+/* Menu */
+.sushi-menu {
+  @apply mt-20 max-w-6xl mx-auto px-6 relative;
+}
+
+.sushi-menu-title {
+  @apply text-4xl font-bold text-center text-green-800 mb-12;
+}
+
+.sushi-menu-category {
+  @apply text-2xl font-semibold text-gray-800 mb-8 text-center;
+}
+
+.sushi-menu-cards {
+  @apply flex flex-wrap gap-6 justify-center;
+}
+
+.sushi-card {
+  @apply bg-white border-2 border-solid border-gray-100 rounded-2xl shadow-lg p-6 mb-20 w-64 transform transition duration-300;
+}
+
+.sushi-card:hover {
+  @apply -translate-y-2 shadow-2xl;
+}
+
+.sushi-card-image {
+  @apply rounded-xl w-full h-40 object-cover mb-4;
+}
+
+.sushi-card-title {
+  @apply text-xl font-semibold text-orange-700 mb-2 text-center;
+}
+
+.sushi-card-description {
+  @apply text-gray-600 mb-3 text-center;
+}
+
+.sushi-card-price {
+  @apply font-bold text-gray-800 text-lg block text-center;
+}
+
+/* Contacts */
+.contacts {
+  @apply py-20 bg-gray-100;
+}
+
+.contacts-container {
+  @apply container mx-auto px-6 flex flex-col lg:flex-row gap-12;
+}
+
+.contacts-form {
+  @apply w-full lg:w-1/2 bg-white rounded-xl shadow-lg p-8;
+}
+
+.contacts-title {
+  @apply text-3xl md:text-4xl font-bold mb-6 text-green-900;
+}
+
+.contacts-input,
+.contacts-textarea {
+  @apply w-full border border-gray-300 rounded-lg px-4 py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-orange-400 transition;
+}
+
+.contacts-button {
+  @apply bg-orange-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-orange-600 transition;
+}
+
+.contacts-side {
+  @apply w-full lg:w-1/2 flex flex-col gap-6;
+}
+
+.contacts-info {
+  @apply bg-white rounded-xl shadow-lg p-6 flex flex-col gap-4;
+}
+
+.contacts-info-item {
+  @apply flex items-center gap-3 text-gray-700;
+}
+
+.contacts-info-item i {
+  @apply text-orange-500 text-xl;
+}
+
+.contacts-socials {
+  @apply bg-white rounded-xl shadow-lg p-6 flex flex-col gap-4;
+}
+
+.contacts-social-title {
+  @apply text-xl font-semibold text-green-900;
+}
+
+.contacts-social-links {
+  @apply flex gap-4 mt-2;
+}
+
+.contacts-social-link {
+  @apply text-orange-500 hover:text-green-900 transition text-2xl;
+}
+
+.contacts-map {
+  @apply w-full h-64 rounded-xl overflow-hidden shadow-lg;
+}
+
+/* footer */
+.footer {
+  @apply bg-green-900 text-white py-10;
+}
+
+.footer-container {
+  @apply container mx-auto px-6 flex flex-col md:flex-row justify-center;
+}
